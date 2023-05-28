@@ -21,7 +21,7 @@ prom1.then(()=>{
     let td1=document.createElement('td');
     td1.innerText="Promise 1";
     let td2=document.createElement('td');
-    td1.innerText="1500s";
+    td2.innerText="1500s";
 	tbody.children[0].innerHTML="";
     tbody.children[0].append(td1);
     tbody.children[0].append(td2);
@@ -30,7 +30,7 @@ prom2.then(()=>{
     let td1=document.createElement('td');
     td1.innerText="Promise 2";
     let td2=document.createElement('td');
-    td1.innerText="2000s";
+    td2.innerText="2000s";
 	tbody.children[0].innerHTML="";
     tbody.children[0].append(td1);
     tbody.children[0].append(td2);
@@ -39,7 +39,7 @@ prom3.then(()=>{
     let td1=document.createElement('td');
     td1.innerText="Promise 3";
     let td2=document.createElement('td');
-    td1.innerText="3000s";
+    td2.innerText="3000s";
 	tbody.children[0].innerHTML="";
     tbody.children[0].append(td1);
     tbody.children[0].append(td2);
