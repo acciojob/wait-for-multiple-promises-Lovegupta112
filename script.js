@@ -12,34 +12,37 @@ function addPromise(name,start,end){
     promisesList.push({name ,time:(end-start)/1000});
 }
 
-let start1=new Date().getTime();
 let prom1=new Promise((resolve,reject)=>{
+    let start1=new Date().getTime();
+    let randomTime=Math.floor(Math.random()*(3000-1000+1))+1000;
           setTimeout(()=>{
          resolve();
           let end1=new Date().getTime();
         //   addPromise('Promise 1',(end1-start1)/1000)
           addPromise('Promise 1',start1,end1);
-          },1500);
+          },randomTime);
 })
 
-let start2=new Date().getTime();
 let prom2=new Promise((resolve,reject)=>{
+    let start2=new Date().getTime();
+    let randomTime=Math.floor(Math.random()*(3000-1000+1))+1000;
           setTimeout(()=>{
          resolve();
          let end2=new Date().getTime();
         //  addPromise('Promise 2',(end2-start2)/1000)
          addPromise('Promise 2',start2,end2);
-          },2000);
+          },randomTime);
 })
 
-let start3=new Date().getTime();
 let prom3=new Promise((resolve,reject)=>{
+    let start3=new Date().getTime();
+    let randomTime=Math.floor(Math.random()*(3000-1000+1))+1000;
           setTimeout(()=>{
          resolve();
          let end3=new Date().getTime();
         //  addPromise('Promise 3',(end3-start3)/1000)
          addPromise('Promise 3',start3,end3);
-          },2500);
+          },randomTime);
 })
 
 let allResolved=Promise.all([prom1,prom2,prom3])
